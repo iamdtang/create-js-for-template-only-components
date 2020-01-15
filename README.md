@@ -5,13 +5,13 @@ In order to enable [`template-only-glimmer-components`](https://guides.emberjs.c
 Run the following from the root of your project:
 
 ```
-npx skaterdav85/create-js-for-template-only-components .
+npx create-js-for-template-only-components .
 ```
 
 Working with Emblem?
 
 ```
-TEMPLATE_EXTENSION=".emblem" npx skaterdav85/create-js-for-template-only-components
+TEMPLATE_EXTENSION=".emblem" npx create-js-for-template-only-components
 ```
 
 This does not work with pods.

@@ -1,11 +1,19 @@
 {
   "name": "create-js-for-template-only-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add a .js file for existing template-only components",
   "main": "index.js",
   "author": "David Tang",
   "license": "MIT",
   "bin": {
     "create-js-for-template-only-components": "index.js"
+  },
+  "keywords": [
+    "ember",
+    "template-only-glimmer-components"
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/skaterdav85/create-js-for-template-only-components"
   }
 }
