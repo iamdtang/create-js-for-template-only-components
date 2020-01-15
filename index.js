@@ -4,9 +4,10 @@ const path = require('path');
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-const APP_PATH = path.join(__dirname, 'app');
+const inputPath = process.argv[2];
+const cwd = path.resolve(inputPath ? inputPath : process.cwd());
+const APP_PATH = path.join(cwd, 'app');
 const TEMPLATE_EXTENSION = process.env.TEMPLATE_EXTENSION || '.hbs';
-
 const directoryPath = path.join(APP_PATH, 'templates/components/');
 const templatesWithMissingJsFile = [];
 
@@ -33,11 +34,11 @@ function listFiles(directoryPath) {
   });
 }
 
-console.log(`Potential conflicts: ${templatesWithMissingJsFile.length}`);
+console.log(`Total components with missing .js files: ${templatesWithMissingJsFile.length}`);
 
 templatesWithMissingJsFile.forEach((itemPath) => {
   const componentName = getComponentNameFromPath(itemPath);
-  console.warn(`A .js file does not exist for ${componentName}`);
+  console.warn(`Missing .js file for ${componentName}`);
   execSync(`ember g component-class ${componentName}`);
 });
 
