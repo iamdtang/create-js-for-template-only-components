@@ -1,0 +1,1 @@
+https://guides.emberjs.com/release/configuring-ember/optional-features/#toc_template-only-glimmer-components

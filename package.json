@@ -1,0 +1,11 @@
+{
+  "name": "create-js-for-template-only-components",
+  "version": "0.0.1",
+  "description": "Add a .js file for existing template-only components",
+  "main": "index.js",
+  "author": "David Tang",
+  "license": "MIT",
+  "bin": {
+    "create-js-for-template-only-components": "index.js"
+  }
+}
