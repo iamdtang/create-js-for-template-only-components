@@ -5,7 +5,7 @@ In order to enable [`template-only-glimmer-components`](https://guides.emberjs.c
 Run the following from the root of your project:
 
 ```
-npx create-js-for-template-only-components .
+npx create-js-for-template-only-components
 ```
 
 Working with Emblem?
